@@ -1,4 +1,6 @@
-![My site map screenshot](/imgs/jkimsitemap.jpg)
+![My site map screenshot](https://github.com/gemstr/phase-0/blob/master/week-2/imgs/jkimsitemap.jpg)
+
+I understand the concept of relative paths, I just could not get the inline image to display via relative path!
 
 ##What are the 6 Phases of Web Design?
 The phases are: information gathering, planning, design, developing, devlivery &amp testing, maintenance
