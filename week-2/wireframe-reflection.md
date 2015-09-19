@@ -1,4 +1,4 @@
-![My blog index wireframe](./imgs/wireframe-blog-idex.jpg)
+![My blog index wireframe](./imgs/wireframe-blog-index.jpg)
 
 ##What is a wireframe?
 A wireframe is a skeletal overview of the site as well as the elemental placements
