@@ -1,0 +1,23 @@
+body {
+  color: #000080;
+  background-color: #ffffff;
+}
+a {
+  color: #800080;
+}
+a:visited {
+  color: #ff0000;
+}
+
+.left {
+  float: left;
+  width: 40%;
+}
+
+.right {
+  float: right;
+  width: 40%;
+}
+.clear {
+  clear: both;
+}
