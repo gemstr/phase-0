@@ -9,15 +9,37 @@ a:visited {
   color: #ff0000;
 }
 
+header {
+  font-weight: bolder;
+  text-align:center;
+  border-bottom: 1px solid grey;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+
+section {
+  border-bottom: 1px solid grey;
+
+}
+
+}
+
 .left {
   float: left;
   width: 40%;
 }
 
-.right {
+.left li, .right li {
+  margin: 1em 0;
+}
+
+
+.right{
   float: right;
   width: 40%;
 }
+
 .clear {
-  clear: both;
+  clear:both;
+
+  ;
 }
