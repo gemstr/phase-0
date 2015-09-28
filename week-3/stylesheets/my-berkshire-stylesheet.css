@@ -9,37 +9,67 @@ a:visited {
   color: #ff0000;
 }
 
-header {
-  font-weight: bolder;
-  text-align:center;
-  border-bottom: 1px solid grey;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-
-section {
-  border-bottom: 1px solid grey;
-
-}
-
-}
-
 .left {
   float: left;
   width: 40%;
+  margin-left:4em;
 }
-
 .left li, .right li {
-  margin: 1em 0;
+  margin: 1.8em 0;
+
+
 }
-
-
-.right{
+.right {
   float: right;
   width: 40%;
+  margin-right:4em;
+}
+.clear {
+  clear: both;
+  border-top: 1px solid grey;
 }
 
-.clear {
+.left span, .right span {
+  font-size: .7em;
+}
+
+header {
+  font-weight: bolder;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+h1 {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: .9em;
+}
+h2 {
+  font-size: .8em
+}
+h1, h2, h3 {
+  margin: 0em;
+}
+header span {
+  font-size: 1.8em;
+}
+.geico {
+  border-top: 1px solid grey;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  font-size: .6em;
   clear:both;
 
-  ;
+}
+
+.geico img {
+  margin: 1em 0 -1em;
+
+  }
+
+footer {
+  margin-top: 1em;
+  border-top: 1px solid grey;
 }
