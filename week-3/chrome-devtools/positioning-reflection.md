@@ -1,4 +1,4 @@
-![Change colors](/imgs/changecolors.png)
+![Change colors](./imgs/changecolors.png)
 
 ![Columns](./imgs/column.png)
 
