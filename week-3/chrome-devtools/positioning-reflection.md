@@ -26,3 +26,5 @@ What are the differences between Margin, Border, and Padding?
 -Margin is the space outside of your element, Border is the visible edge of the element, and padding is the space between the content(ie text) and the border.
 What was your impression of this challenge overall? (love, hate, and why?)
 -I hated and semi enjoyed it at the same time. It really forced me to get an understanding the different element positionings.
+
+My programming partner was Joe Marion
