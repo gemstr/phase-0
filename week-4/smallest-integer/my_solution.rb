@@ -13,27 +13,15 @@
 # Your Solution Below
 
 def smallest_integer(list_of_nums)
-  if list_of_nums.length > 1
-    currentsmallnumber = list_of_nums[0]
-    list_of_nums.each do |num|
-      if currentsmallnumber > num
-        currentsmallnumber = num
-      end
+  smallestnumber = list_of_nums.pop
+
+
+  while list_of_nums.count > 0 do
+    number = list_of_nums.pop
+    if smallestnumber > number
+      smallestnumber = number
     end
-    puts currentsmallnumber
-
-  else
-    puts nill
   end
-end
+  p smallestnumber
 
-smallest_integer([ 0, 5, 7, 2, 8, 7, 6, 2, -1])
-
-#using .sort
-=begin
-def smallest_integer(list_of_nums)
-  sortedarray = list_of_nums.sort
-  smallestnum = sortedarray[0]
-  puts smallestnum
 end
-=end
