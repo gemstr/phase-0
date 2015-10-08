@@ -25,7 +25,7 @@
 #
 
 # 1. Initial Solution
-def score(array)
+def mode(array)
   hash = Hash.new(0)
   array.each{|key| hash[key] += 1}
   tally = 0
@@ -41,7 +41,7 @@ end
 
 
 
-=begin NOAH
+=begin NOAH's code
 def mode(array)
     new_array=Array.new
     max_element=array.max_by{|x| array.count(x)}
@@ -58,9 +58,9 @@ end
 mode_calc([1, 3, 1, 4, 1, 4, 4])
 =end
 
-array1 = [1,4,5,2,3,1,1,3,5,5]
-
-score(array1)
+#array1 = [1,4,5,2,3,1,1,3,5,5]
+array2 = ['apple', 'banana', 'carrot', 'apple' , 'carrot']
+mode(array2)
 
 
 
