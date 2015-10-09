@@ -1,4 +1,5 @@
 # Research Methods
+# I CHOSE PERSON 4 & 5. I also did Person 1 for challenge. Reflection under Person 4/5's solution.
 
 # I spent [] hours on this challenge.
 
@@ -106,30 +107,51 @@ Share any tricks you used to find and decipher the Ruby Docs
 =end
 
 # Person 5
+i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
+my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
+
 def my_array_splitting_method(source)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  int_array = []
+  misc_array = []
+  total_array = []
+  source.each do |obj|
+    if obj.is_a? Integer
+      int_array << obj
+    else
+      misc_array << obj
+    end
+  end
+  total_array.push(int_array).push(misc_array)
+  total_array
 end
+
 
 def my_hash_splitting_method(source, age)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  criterion_array = []
+  noncriterion_array = []
+  full_array = []
+  source.each do |key, value|
+    if value <= age
+      criterion_array << [key, value]
+    else
+      noncriterion_array << [key, value]
+    end
+  end
+  full_array.push(criterion_array).push(noncriterion_array)
 end
 
-# Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
-
+=begin
 
 # Release 1: Identify and describe the Ruby method you implemented. Teach your
 # accountability group how to use the methods.
-#
-#
-#
-
+.each -Used to iterate thru the Array and Hash's key-value(s)
+.is_a? Integer  - Used to identify if object in array is an Integer
+.push Used to concat arrays to one another.
 
 # Release 3: Reflect!
 # What did you learn about researching and explaining your research to others?
+# I learned how to identify objects types and use them in conditional statements.
 #
 #
 #
-#
+=end
