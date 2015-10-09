@@ -75,3 +75,49 @@ end
 
 printlist(list)
 
+
+
+
+
+
+=begin  SIDE WORK I DID TO PRACTICE THE CONCEPTS I LEARNED AND APPLIED IN MY GPS SESSION.
+
+pets = { "donkey" => 4,
+                    "dog" => 7,
+                    "cat" => 1,
+                "dolphin" => 9,
+                  "eagle" => 7,
+                   "fish" => 6    }
+
+
+#create method that adds to array
+
+def add_pets( list, animal, how_many )
+  #if animal already exsits, then tally
+  if list[animal]
+    list[animal] += how_many
+    list
+  else
+    list[animal] = how_many
+    list
+  end
+end
+
+
+
+puts "add HORSE"
+p add_pets(pets, "horse", 11)
+
+puts "add RABBIT"
+p add_pets(pets, "rabbit", 99)
+
+puts "add TURTLE"
+p add_pets(pets, "turtle", 5)
+
+puts"ADD MORE TURTLES!!!!"
+p add_pets(pets, "turtle", 10000)
+
+puts "THE MAXXXXXXXX VALUE IN THIS HASH IS:"
+p pets.values.max
+
+=end
