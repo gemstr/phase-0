@@ -28,16 +28,16 @@
 def mode(array)
   hash = Hash.new(0)
   array.each{|key| hash[key] += 1}
-  tally = 0
+
   final_array = []
   hash.each do|key, value|
-    if value > tally || tally == value
-      tally = value
+    if value == hash.values.max
       final_array.push(key)
     end
   end
-  p final_array
+  return final_array
 end
+
 
 
 
