@@ -76,6 +76,25 @@ end
 printlist(list)
 
 
+=begin
+Reflect:
+What did you learn about pseudocode from working on this challenge?
+- I learned how cruicial it is in coming up with a workable solution BEFORE coding and knowing what the input and ouput always.
+What are the tradeoffs of using Arrays and Hashes for this challenge?
+- The tradeoffs are in the way we access the index of i in an Array or index of key in a Hash.
+What does a method return?
+-The last line it returns.
+What kind of things can you pass into methods as arguments?
+-Any object. strings, arrray, hashes, etc.
+How can you pass information between methods?
+- No, unless you are working with classes.
+What concepts were solidified in this challenge, and what concepts are still confusing?
+
+=end
+
+
+
+
 
 
 
