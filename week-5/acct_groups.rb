@@ -19,3 +19,18 @@ def acct_grouper(list)
 end
 
 p acct_grouper(copperheads)
+
+=begin
+Release 6: Reflect
+What was the most interesting and most difficult part of this challenge?
+-  The most difficult and interesting park of this challenge was coming up with working pseudocode solution.(paper)
+Do you feel you are improving in your ability to write pseudocode and break the problem down?
+The more I have a 'feel' for the Ruby environnemt, my ability  to pseudocode gets better. I guess it's a matter of know what I'm capable of in Ruby sor far.
+Was your approach for automating this task a good solution? What could have made it even better?
+- I believe simple logic is what got me a working solution.
+What data structure did you decide to store the accountability groups in and why?
+- Basically a hash. An array of arrays.
+What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
+I couldn't refactor.
+
+=end
