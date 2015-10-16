@@ -103,7 +103,7 @@ What were the main differences between this die class and the last one you creat
 What does this exercise teach you about making code that is easily changeable or modifiable?
   - It teaches you to always include ease of use, scalablity, maintainablity in my code.
 What new methods did you learn when working on this challenge, if any?
-  - I learned about the .shuffle method that allows you to shuffle the objects in your array.
+  - I learned to use the .class method to compare object type.
 What concepts about classes were you able to solidify in this challenge?
   - I was able to solidify my understanding use of instance variables.
 =end
