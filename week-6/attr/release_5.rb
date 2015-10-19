@@ -3,6 +3,7 @@
 # refactor this code to move method assignments to attr_ attributes. Like we did with age. Let's pare down the superfluous code.
 
 # Your Code Here:
+=begin
 
 class Profile
 # first let's finish refactoring this code
@@ -44,28 +45,27 @@ class Profile
 
 end
 
-
+=end
 
 
 
 class NameData
-
-  def initialize(name)
-    @name = "Josh"
+  def initialize  #define a initialize method that doesn't accept any arguments
+    @name = "Joshua Kim"
+    #inside the initialization I create an instance variable and set it to my name; every instance of NameData will have this specific string assignment to it's instance variable @name.
   end
-
 end
 
-
-
 class Greetings
-
   def initialize
-    @NameData = NameData.new
+    @nameData = NameData.new
+    # When we create a new instance of Greetings, we are creating a instance of NameData and storing it and its objects and variables in
   end
 
   def hello
-    puts "Hello"
+    puts "Hello #{@name}"
   end
-
 end
+
+greet1 = Greetings.new
+greet1.hello
