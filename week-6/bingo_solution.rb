@@ -26,6 +26,30 @@
   #Print each array to each line
 
 # Initial Solution
+=begin
+    column_b = [ @bingo_board[0][0] , @bingo_board[1][0] , @bingo_board[2][0], @bingo_board[3][0], @bingo_board[4][0] ]
+    column_i = [ @bingo_board[0][1] , @bingo_board[1][1] , @bingo_board[2][1], @bingo_board[3][1], @bingo_board[4][1] ]
+    column_n = [ @bingo_board[0][2] , @bingo_board[1][2] , @bingo_board[2][2], @bingo_board[3][2], @bingo_board[4][2] ]
+    column_g = [ @bingo_board[0][3] , @bingo_board[1][3] , @bingo_board[2][3], @bingo_board[3][3], @bingo_board[4][3] ]
+    column_o = [ @bingo_board[0][4] , @bingo_board[1][4] , @bingo_board[2][4], @bingo_board[3][4], @bingo_board[4][4] ]
+
+  def call
+    @bingo_array = [ "B", "I", "N", "G", "O"]
+    randomletter = bingo_array.shuffle[0]
+    randomnum = rand{1..100}.to_s
+    letter_num = randomletter << randomnum
+    unless @drawn.include?(letter_num) #unless the object is already in the array, push the drawing to the drawn storage array.
+      @drawn.push(letter_num)
+      p letter_num  #puts and return the value of the drawing
+    else
+      draw #again
+    end
+
+=end
+
+
+
+# Refactored Solution
 
 class BingoBoard
   attr_accessor :drawn
@@ -87,32 +111,18 @@ new_game.call
 4.times {puts "CALLED NEW!"}
 new_game.check
 
-
-# Refactored Solution
 =begin
-    column_b = [ @bingo_board[0][0] , @bingo_board[1][0] , @bingo_board[2][0], @bingo_board[3][0], @bingo_board[4][0] ]
-    column_i = [ @bingo_board[0][1] , @bingo_board[1][1] , @bingo_board[2][1], @bingo_board[3][1], @bingo_board[4][1] ]
-    column_n = [ @bingo_board[0][2] , @bingo_board[1][2] , @bingo_board[2][2], @bingo_board[3][2], @bingo_board[4][2] ]
-    column_g = [ @bingo_board[0][3] , @bingo_board[1][3] , @bingo_board[2][3], @bingo_board[3][3], @bingo_board[4][3] ]
-    column_o = [ @bingo_board[0][4] , @bingo_board[1][4] , @bingo_board[2][4], @bingo_board[3][4], @bingo_board[4][4] ]
-
-  def call
-    @bingo_array = [ "B", "I", "N", "G", "O"]
-    randomletter = bingo_array.shuffle[0]
-    randomnum = rand{1..100}.to_s
-    letter_num = randomletter << randomnum
-    unless @drawn.include?(letter_num) #unless the object is already in the array, push the drawing to the drawn storage array.
-      @drawn.push(letter_num)
-      p letter_num  #puts and return the value of the drawing
-    else
-      draw #again
-    end
-
+####### Reflection ########
+How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
+  -I did some/alot of psuedocoding on paper , different approaches. It's really important and helpful to have psuedocoding so work on "small" problems.
+What are the benefits of using a class for this challenge?
+  - The benefits of using a class for this challenge is that we can spawn different games and play differnt boards
+How can you access coordinates in a nested array?
+  - You access coordinates by successive indexes in brackets of that array like this: array[index_of_array1][index_of_nested_array].
+What methods did you use to access and modify the array?
+  -I used the #each iterator to iterate and access and modify the arrays
+How did you determine what should be an instance variable versus a local variable?
+  -If I wanted the variable to spawn with the instance of the class, I created/initialized an instance variable.
+What do you feel is most improved in your refactored solution?
+  -It was more like a overhaul of code and a differnt approch to the problem. I'm sure I could've refactor a bit more.
 =end
-
-
-
-
-
-#Reflection
-
