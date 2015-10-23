@@ -1,6 +1,6 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [with: John Polhill].
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
@@ -17,31 +17,20 @@ class VirusPredictor
   end
   # Prints the results of the virus effects.
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths()
+    speed_of_spread()
   end
 
   private
   # predicts the deaths based on the population and population density, and prints the result.
-  def predicted_deaths(population_density, population, state)
+  def predicted_deaths()
     # predicted deaths is solely based on population density
-    if @population_density >= 200
-      number_of_deaths = (@population * 0.4).floor
-    elsif @population_density >= 150
-      number_of_deaths = (@population * 0.3).floor
-    elsif @population_density >= 100
-      number_of_deaths = (@population * 0.2).floor
-    elsif @population_density >= 50
-      number_of_deaths = (@population * 0.1).floor
-    else
-      number_of_deaths = (@population * 0.05).floor
-    end
-
+    # Not the same as before but more accurate
+    number_of_deaths = (@population * (@population_density / 500)).floor
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
-
   end
   #Predicts the speed of spreed based on population density and prints the results.
-  def speed_of_spread(population_density, state) #in months
+  def speed_of_spread() #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     speed = 0.0
@@ -70,18 +59,23 @@ end
  # initialize VirusPredictor for each state
 
 
-alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
-alabama.virus_effects
-
-jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
-jersey.virus_effects
-
-california = VirusPredictor.new("California", STATE_DATA["California"][:population_density], STATE_DATA["California"][:population])
-california.virus_effects
-
-alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
-alaska.virus_effects
-
+STATE_DATA.each do |state_name, pop_data|
+  VirusPredictor.new(state_name, pop_data[:population_density], pop_data[:population]).virus_effects;
+end
 
 #=======================================================================
 # Reflection Section
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+# => One uses the symbol format and the other uses the hash rocket.
+
+# What does require_relative do? How is it different from require?
+# => require_relative uses the path relative to the file location as opposed to the absolute path.
+
+# What are some ways to iterate through a hash?
+# => enumerable methods, while loops, etc.
+
+#When refactoring virus_effects, what stood out to you about the variables, if anything?
+# => Instance variables don't need to be passed as parameters
+
+#What concept did you most solidify in this challenge?
+# => @@ means class variables.
