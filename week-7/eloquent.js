@@ -18,14 +18,23 @@ for (var pound = "#"; pound.length < 8; pound = pound + "#")
   console.log(pound);
 
 //Fizzbuzz
-
+#Will try to complete later.
 
 
 // Functions
 
 // Complete the `minimum` exercise.
-
-
+function min(num1, num2){
+  if (num1 > num2){
+    return num2;}
+  else return num1;
+}
 
 // Data Structures: Objects and Arrays
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
+var me = {
+  name: Josh Kim,
+  age: 30,
+  favFoods: ["Steak", "Kimchi", "Pizza" ],
+  quirk : "Not very quirky!",
+};
