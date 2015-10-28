@@ -1,5 +1,5 @@
 // Eloquent JavaScript
-
+Here is my submission link:
 // Run this file in your terminal using `node my_solution.js`. Make sure it works before moving on!
 
 // Program Structure
