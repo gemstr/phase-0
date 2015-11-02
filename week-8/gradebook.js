@@ -87,6 +87,34 @@ var average = function(integers){
 // __________________________________________
 // Refactored Solution
 
+var gradebook = {};
+
+for (i = 0; i < students.length; i++){
+  gradebook[students[i]] = {};
+};
+for (i = 0; i < students.length; i++){
+  gradebook[students[i]].testScores = scores[i];
+}
+
+gradebook.addScore = function(name, score){
+  gradebook[name].testScores.push(score);
+}
+
+gradebook.getAverage = function(name){
+  return average(gradebook[name].testScores);
+};
+
+
+// Release 6: Create a Function to Average Grades
+// Create a new function average that accepts an array of integers and return the average of those integers.
+var average = function(integers){
+  var total = 0
+  for (i = 0; i < integers.length; i++){
+    total += integers[i];
+  }
+  return total / (integers.length);
+}
+
 
 
 
@@ -96,7 +124,12 @@ var average = function(integers){
 
 // __________________________________________
 // Reflect
-
+// What did you learn about adding functions to objects?
+// I'm not sure entirely sure, is so we can keep everything DRY?
+// How did you iterate over nested arrays in JavaScript?
+// Using for loops
+// Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+// We used the same basic JS methods.
 
 
 
