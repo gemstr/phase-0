@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
-// This challenge took me [#] hours.
+// I worked on this challenge with: Un Choi
+// This challenge took me [4+] hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -41,27 +41,44 @@ var voteCount = {
   treasurer: {}
 }
 
+// function tally_er(votes) {  //takes in a ballot as object
+//   for (var voter in votes) {
+//    if (votes.hasOwnProperty(voter)) {
+//       var office_tally = votes[voter];
+//      }
+//     for (var office in office_tally) {
+//       if (voteCount[office].hasOwnProperty(office_tally[office]) {
+//         voteCount[office][office_tally[office]] += 1;
+//       }
+//       else {
+//         voteCount[office][office_tally[office]] = 1;
+//       }
 
 
-var tally_er = function(ballot) {
-  for (var electee in ballot){
-    if (ballot.hasOwnProperty(president)) {
-      voteCount.president.ballot[president] += 1;
-    } else if (ballot.hasOwnProperty(vicePresident)) {
-      voteCount.vicePresident.ballot[vicePresident] += 1;
-    } else if (ballot.hasOwnProperty(secretary)) {
-      voteCount.secretary.ballot[secretary] += 1;
-    } else if (ballot.hasOwnProperty(treasurer)){
-      voteCount.treasurer.ballot[treasurer] += 1;
-    }
-  }
-}
+// };
 
-for (var voters in votes){
-  tally_er(votes[voters]);
-}
 
-console.log(voteCount)
+
+
+// var tally_er = function(ballot) {
+//   for (var electee in ballot){
+//     if (ballot.hasOwnProperty(president)) {
+//       voteCount.president.ballot[president] += 1;
+//     } else if (ballot.hasOwnProperty(vicePresident)) {
+//       voteCount.vicePresident.ballot[vicePresident] += 1;
+//     } else if (ballot.hasOwnProperty(secretary)) {
+//       voteCount.secretary.ballot[secretary] += 1;
+//     } else if (ballot.hasOwnProperty(treasurer)){
+//       voteCount.treasurer.ballot[treasurer] += 1;
+//     }
+//   }
+// }
+
+// for (var voters in votes){
+//   tally_er(votes[voters]);
+// }
+
+// console.log(voteCount)
 
 
 
@@ -120,12 +137,37 @@ var officers = {
 
 // Pseudocode
 
+// Create a function that takes votes object
+// Iterate through each object in the votes object
+// Iterate through  each property for the name that it was voted for
+// Increment the votes in the voteCount variable as each person is repeated
+
+// Calculate who received most votes
+
+
 
 // __________________________________________
 // Initial Solution
+function tallyer(ballot) {
+  for (var voters in ballot){
+    if (ballot.hasOwnProperty(voters)){
+      if (ballot[voters['president']]){
+        voteCount.president[votes[voters].president] += 1
+      }
+      if (ballot[voters['vicePresident']]){
+        voteCount.vicePresident[votes[voters].vicePresident] += 1
+      }
+      if (ballot[voters['secretary']]){
+        voteCount.secretary[votes[voters].secretary] += 1
+      }
+      if (ballot[voters['treasurer']]){
+        voteCount.treasurer[votes[voters].treasurer] += 1
+      }
+    }
+  }
+}
 
-
-
+// We can't seem to get past this part! We couldn't figure out why our tally function isnt working?
 
 
 
@@ -141,7 +183,11 @@ var officers = {
 // __________________________________________
 // Reflection
 
-
+What did you learn about iterating over nested objects in JavaScript?
+We were unable to complete the challenge by the deadline, but are working on it still.
+We will update it regardless when we are finished.
+Were you able to find useful methods to help you with this?
+What concepts were solidified in the process of working through this challenge?
 
 
 
