@@ -9,7 +9,7 @@
 ###### INITIAL WORK  ######
 
 def serving_size_calc(item_to_make, order_quantity)
-  #creates method serving_size_calculator that recieves a string and an integer as input. The string refers to the item requested for baking, and the integer refers to the amount of people to feed.
+  #creates method serving_size_calculator that receives a string and an integer as input. The string refers to the item requested for baking, and the integer refers to the amount of people to feed.
   library = {"cookie" => 1, "cake" =>  5, "pie" => 7}
 
 

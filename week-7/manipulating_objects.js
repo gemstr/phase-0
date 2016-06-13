@@ -34,7 +34,7 @@ adam.children = terah.children
 //What tests did you have trouble passing? What did you do to make it pass? Why did that work?
 // - I had trouble passing tests after attempting to add to the empty children object. I was setting setting properties with the equal sign instead of (:)
 //How difficult was it to add and delete properties outside of the object itself?
-// I thought it was the easiest part of the excercise.
+// I thought it was the easiest part of the exercise.
 //What did you learn about manipulating objects in this challenge?
 // I learned that objects contain values that can be changed, or deleted or added new!
 // I also learned and better understood the property: value relationship of an object.

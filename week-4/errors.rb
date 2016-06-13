@@ -133,7 +133,7 @@ cartmans_lie('A meteor the size of the earth is about to hit Wyoming!')
 # 4. Where is the error in the code?
 #  5 cannot be multiplied by "Respect my authoritay".
 # 5. Why did the interpreter give you this error?
-# Becuase it doesn't make sense, however switching them around does.
+# Because it doesn't make sense, however switching them around does.
 
 # --- error -------------------------------------------------------
 
