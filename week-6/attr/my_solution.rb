@@ -31,7 +31,7 @@ Release_1
 What are these methods doing?
   In reference to the methods that accept an arugment, they are setter methods, They change the instance variables of the object instance.
 How are they modifying or returning the value of instance variables?
-  They are modifying/returning the value of instance variables by receving an input and returning something else.
+  They are modifying/returning the value of instance variables by receiving an input and returning something else.
 
 Release_2
 What changed between the last release and this release?

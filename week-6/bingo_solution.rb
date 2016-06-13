@@ -116,7 +116,7 @@ new_game.check
 How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
   -I did some/alot of psuedocoding on paper , different approaches. It's really important and helpful to have psuedocoding so work on "small" problems.
 What are the benefits of using a class for this challenge?
-  - The benefits of using a class for this challenge is that we can spawn different games and play differnt boards
+  - The benefits of using a class for this challenge is that we can spawn different games and play different boards
 How can you access coordinates in a nested array?
   - You access coordinates by successive indexes in brackets of that array like this: array[index_of_array1][index_of_nested_array].
 What methods did you use to access and modify the array?
@@ -124,5 +124,5 @@ What methods did you use to access and modify the array?
 How did you determine what should be an instance variable versus a local variable?
   -If I wanted the variable to spawn with the instance of the class, I created/initialized an instance variable.
 What do you feel is most improved in your refactored solution?
-  -It was more like a overhaul of code and a differnt approch to the problem. I'm sure I could've refactor a bit more.
+  -It was more like a overhaul of code and a different approch to the problem. I'm sure I could've refactor a bit more.
 =end

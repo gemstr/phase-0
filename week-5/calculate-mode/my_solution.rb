@@ -13,7 +13,7 @@
 # 0. Pseudocode
 
 # What is the input? Array
-# What is the output? (i.e. What should the code return?) The most frequently occuring element
+# What is the output? (i.e. What should the code return?) The most frequently occurring element
 # What are the steps needed to solve the problem?
 # 1.def method accepts array
 # 2. Set up iteration to do .count on the array.

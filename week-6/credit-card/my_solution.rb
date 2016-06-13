@@ -116,6 +116,6 @@ What was the most difficult part of this challenge for you and your pair?
 What new methods did you find to help you when you refactored?
   -I learned how to use the .inject(:+) to get the sum of an array if they are integers
 What concepts or learnings were you able to solidify in this challenge?
-  - The concepts of classes and the instance varaibles inbetween the methods are something that I still don't feel super confident b/c it still feels like pulling teeth. haha. the iteration of an array with .each_with_index.map. What I didn't know was that .map needs a else condition, or else it maps the array with nil objects!
+  - The concepts of classes and the instance varaibles between the methods are something that I still don't feel super confident b/c it still feels like pulling teeth. haha. the iteration of an array with .each_with_index.map. What I didn't know was that .map needs a else condition, or else it maps the array with nil objects!
 
 end
